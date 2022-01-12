@@ -1,29 +1,33 @@
 import React ,{useEffect,useState}from 'react'
+import Message from './Message';
 
 const SimpleForm = () => {
-    const [state, setState] = useState({
+
+
+    const [formState, setFormState] = useState({
         name:'',
         email:''
     });
 
-    const {name, email} = state;
+    const {name, email} = formState;
 
     
+    
     useEffect(() => {
-        console.log("hey, I'm rendering SimpleForm");
+
     }, [])
 
     useEffect(() => {
-       console.log("Email changed");
+
     }, [email])
     useEffect(() => {
-       console.log("Name changed");
+
     }, [name])
 
 
     const handleChange =({target}) => {
-        setState({
-            ...state,
+        setFormState({
+            ...formState,
             [target.name]: target.value
         })
     }
@@ -31,8 +35,9 @@ const SimpleForm = () => {
     return (
         <>
             <p className='display-2 text-left m-5'>useEffect</p>
+            <p className='h2 text-left m-5'>Type 123 in Name to see the unmount component.</p>
             <hr></hr>
-            <div class="container">
+            <div className="container">
                 <form>
                     <div className="form-group">
                         <label className='h4'>Email address</label>
@@ -55,13 +60,14 @@ const SimpleForm = () => {
                         name="name"
                         className="form-control form-control-lg"
                         placeholder="Name"
-                        autocomplete="off"
+                        autoComplete="off"
                         value={name}
                         onChange={handleChange}
                         />
                     </div>
                 </form>
             </div>
+            {name==="123" && <Message/>}
 
         </>
     )
