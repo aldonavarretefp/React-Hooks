@@ -10,6 +10,7 @@ import { Layout } from './components/05-useLayoutEffect/Layout';
 import { MemoHook } from './components/06-memos/MemoHook';
 import { Memorize } from './components/06-memos/Memorize';
 import CallBack from './components/06-memos/CallBack';
+import { Padre } from './components/07-tarea-memo/Padre';
 
 
 const HooksApp = () => {
@@ -35,6 +36,9 @@ const HooksApp = () => {
             <MemoHook/>
             {/* useCallBack */}
             <CallBack/>
+
+            {/* Tarea */}
+            <Padre/>
         </div>
     )
 }
