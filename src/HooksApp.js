@@ -11,6 +11,7 @@ import { MemoHook } from './components/06-memos/MemoHook';
 import { Memorize } from './components/06-memos/Memorize';
 import CallBack from './components/06-memos/CallBack';
 import { Padre } from './components/07-tarea-memo/Padre';
+import TodoApp from './components/08-useReducer/TodoApp';
 
 
 const HooksApp = () => {
@@ -19,7 +20,6 @@ const HooksApp = () => {
             <p className='display-1 text-center m-5'>HooksApp</p>
             <Counter/>
             <CounterWithCustomHook/>
-
             {/* useEffect */}
             <SimpleForm/>
             {/* useFetch */}
@@ -36,9 +36,13 @@ const HooksApp = () => {
             <MemoHook/>
             {/* useCallBack */}
             <CallBack/>
-
             {/* Tarea */}
             <Padre/>
+
+            
+            <TodoApp/>
+
+
         </div>
     )
 }
