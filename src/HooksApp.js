@@ -12,35 +12,38 @@ import { Memorize } from './components/06-memos/Memorize';
 import CallBack from './components/06-memos/CallBack';
 import { Padre } from './components/07-tarea-memo/Padre';
 import TodoApp from './components/08-useReducer/TodoApp';
+import MainApp from './components/09-useContext/MainApp';
 
 
 const HooksApp = () => {
     return (
         <div>
-            <p className='display-1 text-center m-5'>HooksApp</p>
-            <Counter/>
-            <CounterWithCustomHook/>
+            {/* <p className='display-1 text-center m-5'>HooksApp</p> */}
+            {/* <Counter/> */}
+            {/* <CounterWithCustomHook/> */}
             {/* useEffect */}
-            <SimpleForm/>
+            {/* <SimpleForm/> */}
             {/* useFetch */}
-            <FormWithCustomHook/>
-            <MultipleCustomHooks/>
+            {/* <FormWithCustomHook/> */}
+            {/* <MultipleCustomHooks/> */}
             {/* useRef */}
-            <FocusScreen/>
-            <RealExampleRef/>
+            {/* <FocusScreen/> */}
+            {/* <RealExampleRef/> */}
             {/* useLayoutEffect */}
-            <Layout/>
+            {/* <Layout/> */}
             {/* memo */}
-            <Memorize/>
+            {/* <Memorize/> */}
             {/* useMemo */}
-            <MemoHook/>
+            {/* <MemoHook/> */}
             {/* useCallBack */}
-            <CallBack/>
+            {/* <CallBack/> */}
             {/* Tarea */}
-            <Padre/>
+            {/* <Padre/> */}
 
             
-            <TodoApp/>
+            {/* <TodoApp/> */}
+
+            <MainApp/>
 
 
         </div>
