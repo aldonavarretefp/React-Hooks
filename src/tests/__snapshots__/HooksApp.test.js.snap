@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en HooksApp Debe de mostrarse correctamente 1`] = `
+<div>
+  <p
+    className="display-1 text-center m-5"
+  >
+    HooksApp
+  </p>
+</div>
+`;

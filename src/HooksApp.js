@@ -18,7 +18,7 @@ import MainApp from './components/09-useContext/MainApp';
 const HooksApp = () => {
     return (
         <div>
-            {/* <p className='display-1 text-center m-5'>HooksApp</p> */}
+            <p className='display-1 text-center m-5'>HooksApp</p>
             {/* <Counter/> */}
             {/* <CounterWithCustomHook/> */}
             {/* useEffect */}
@@ -43,7 +43,7 @@ const HooksApp = () => {
             
             {/* <TodoApp/> */}
 
-            <MainApp/>
+            {/* <MainApp/> */}
 
 
         </div>
