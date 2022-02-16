@@ -22,7 +22,15 @@ export const useFetch = (url) => {
             }else{
                 console.log("setState not called");
             }
-        });
+        })
+        .catch(error => {
+            setState({
+                data: null,
+                loading: false,
+                error: "Can not fetch data"
+
+            })
+        })
     }, [url]);
 
     return state;
